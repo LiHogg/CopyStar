@@ -1,0 +1,92 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 1em;
+    margin-top: 20px;
+}
+
+/* Сетка каталога */
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Карточка товара */
+.product {
+    width: calc(33.333% - 20px); /* 3 колонки */
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: darkblue;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 1024px) {
+    .product {
+        width: calc(50% - 20px); /* 2 колонки */
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: 100%; /* 1 колонка */
+    }
+}
